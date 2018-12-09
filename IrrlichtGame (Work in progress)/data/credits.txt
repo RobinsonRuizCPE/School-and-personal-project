@@ -1,0 +1,19 @@
+TEXTURE AND SOUND CREDITS:
+==========================
+
+All textures used in ep_survival were taken from CGTextures.com except for:
+
+plate2.jpg				-> from www.novinite.com
+medieval_banners.jpg 	-> from ???
+stained_glass.jpg		-> from http://fr.wikipedia.org/wiki/Fichier:Stained_glass_in_Votivkirche,_Vienna.jpg
+spiderweb1.jpg			-> from http://abstract.desktopnexus.com/wallpaper/207662/
+barrel_side.jpg			-> by "lostsoul08". From http://lostsoul08.deviantart.com/art/Barrel-texture-178720145
+barrel_top.jpg			-> by "lostsould08". From http://lostsoul08.deviantart.com/art/Barrel-texture-178720145
+tab_decal_cracks_a.jpg	-> by Tabun, http://www.tabun.nl
+tab_decal_soot_a.jpg	-> by Tabun, http://www.tabun.nl
+DecalsGrave01.jpg		-> by Eraser
+
+Sound credits for sound effects used in ep_survival:
+ambient_birds.wav 		-> by "reinsamba". From http://www.freesound.org/people/reinsamba/sounds/33827/
+drip*.wav				-> by "acclivity". From http://www.freesound.org/people/acclivity/sounds/25879/
+church.wav				-> by "Julien Matthey". From http://freesound.org/people/Julien%20Matthey/sounds/127858/

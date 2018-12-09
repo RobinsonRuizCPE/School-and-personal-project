@@ -1,0 +1,91 @@
+   
+================================================================
+Title                 : Destroyer
+Pak name              : Q3shw21
+Autor                 : ShadoW (Poland)
+Contact               : shw86@o2.pl
+Homepage	      : www.shadowsdomain.blo.pl
+================================================================
+* info *
+
+Single Player         : no
+Tournament	      : yes
+Deathmatch            : yes
+Team                  : 2v2 ? :)
+Ctf		      : no
+================================================================
+* Construction *
+Programs               :GtkRadiant-1.4, Winrar, Notpad, Q3map2 , IrfanView
+
+Build time            : Few months, with 2-3 hours a week.
+Based on              : nothing
+Brushes               : 3500
+Entities              : 562
+new textures          : yes
+new sounds            : no
+new models            : yes
+
+
+Items	              : RL x 2		YA x 1           
+                        SG x 1		RA x 1
+                        LG x 1		MH x 1      
+                        RG x 1          
+                        GL x 1                                                                    		
+================================================================
+* How run it *
+
+
+Place q3shw21.pk3 in your quake3/mod directory.
+In game go to console and type 'map q3shw21'
+================================================================
+* My other maps *
+
+Quake III :
+
+1)  q3shw1:Ten pierwszy raz     	(This first time)        
+2)  q3shw2:Za wolno frajerze...		(Too slow sucker)
+3)  q3shw3:Frag-ment			(Frag-ment)	
+4)  q3shw4:Katedra			(Cathedral)
+5)  q3shw5:Dom				(House)	
+6)  q3shw6:Szko³a			(School)		
+7)  q3shw7:Wysokie napiêcie		(High voltage)	
+8)  q3shw8:Gdy nie ma nadziei		(When ther's no hope)
+9)  q3shw9:Bez wyjœcia  		(No escape)		
+10) q3shw10:Czarna wie¿a		(Black tower)	
+11) q3shw11:Orientuj siê		(Be knowledgeable)
+12) q3shw12:Pora umieraæ		(Time to die)
+13) q3shw13:Miasto			(City)
+14) q3shw14:Memento Mori		(Memento Mori)
+15) q3shw15:Wysokie napiêcie II		(High voltage II)
+16) q3shw16:Dotyk œmierci		(Touch of death)
+17) q3shw17:Empty words
+18) q3shw18:Holy blood
+19) q3shw19:Time to die (Remix)
+20) q3shw20:Annihilation
+21) q3shw21:Destroyer
+
+xx) shw_100b:100 brushes
+xx) shw_q3dm17:Q3dm17 conversion by ShadoW
+xx) Eplus1: Memento mori remix
+xx) Eplus2: Annihilation remix
+
+You can download these maps:
+www.shadowsdomain.blo.pl
+www.lvlworld.com
+
+================================================================
+* BiG Thx for: *
+
+- Id software - you know what for.
+- Oak (nsilver@pacifier.com) for some great models.
+- Matt "Lunaran"  Breit, (http://www.lunaran.com) for cool textures!!.
+
+================================================================
+
+   The map is made for Cpma tournament play. I was trying to implement some tricks, and some new layout ideas. The map shoud be done much more earlier, but I don't have really much time nowadays to play with Radiant. I think map came out quite nice. I would like to thank all people, who beta-test this map, to help me make it better :)
+    
+ShadoW
+28.03.2008
+
+
+
