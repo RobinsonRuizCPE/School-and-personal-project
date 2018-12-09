@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{06B4EA3F-176A-44F2-9D7D-30CD262C6834}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="image\color.cpp" />
+    <ClCompile Include="image\image.cpp" />
+    <ClCompile Include="image\image_zbuffer.cpp" />
+    <ClCompile Include="image\io\image_ppm.cpp" />
+    <ClCompile Include="image\ivec2.cpp" />
+    <ClCompile Include="image\texture.cpp" />
+    <ClCompile Include="lib\3d\mat1x4.cpp" />
+    <ClCompile Include="lib\3d\mat2.cpp" />
+    <ClCompile Include="lib\3d\mat3.cpp" />
+    <ClCompile Include="lib\3d\mat4.cpp" />
+    <ClCompile Include="lib\3d\mat4x1.cpp" />
+    <ClCompile Include="lib\3d\quaternion.cpp" />
+    <ClCompile Include="lib\3d\vec2.cpp" />
+    <ClCompile Include="lib\3d\vec3.cpp" />
+    <ClCompile Include="lib\3d\vec4.cpp" />
+    <ClCompile Include="lib\common\backtrace.cpp" />
+    <ClCompile Include="lib\common\basic_functions.cpp" />
+    <ClCompile Include="lib\common\exception_cpe.cpp" />
+    <ClCompile Include="lib\mesh\format\mesh_io_obj.cpp" />
+    <ClCompile Include="lib\mesh\format\mesh_io_off.cpp" />
+    <ClCompile Include="lib\mesh\mesh.cpp" />
+    <ClCompile Include="lib\mesh\mesh_basic.cpp" />
+    <ClCompile Include="lib\mesh\mesh_io.cpp" />
+    <ClCompile Include="lib\mesh\mesh_parametric.cpp" />
+    <ClCompile Include="lib\mesh\triangle_index.cpp" />
+    <ClCompile Include="local\main.cpp" />
+    <ClCompile Include="ray_tracing\primitives\intersection_data.cpp" />
+    <ClCompile Include="ray_tracing\primitives\plane.cpp" />
+    <ClCompile Include="ray_tracing\primitives\primitive_basic.cpp" />
+    <ClCompile Include="ray_tracing\primitives\sphere.cpp" />
+    <ClCompile Include="ray_tracing\render_engine\render_engine.cpp" />
+    <ClCompile Include="ray_tracing\scene\anti_aliasing_table.cpp" />
+    <ClCompile Include="ray_tracing\scene\camera.cpp" />
+    <ClCompile Include="ray_tracing\scene\light.cpp" />
+    <ClCompile Include="ray_tracing\scene\material.cpp" />
+    <ClCompile Include="ray_tracing\scene\ray.cpp" />
+    <ClCompile Include="ray_tracing\scene\scene_parameter.cpp" />
+    <ClCompile Include="ray_tracing\scene\shading_parameter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="image\color.hpp" />
+    <ClInclude Include="image\image.hpp" />
+    <ClInclude Include="image\image_zbuffer.hpp" />
+    <ClInclude Include="image\io\image_ppm.hpp" />
+    <ClInclude Include="image\ivec2.hpp" />
+    <ClInclude Include="image\template\image_basic.hpp" />
+    <ClInclude Include="image\texture.hpp" />
+    <ClInclude Include="lib\3d\mat1x4.hpp" />
+    <ClInclude Include="lib\3d\mat2.hpp" />
+    <ClInclude Include="lib\3d\mat3.hpp" />
+    <ClInclude Include="lib\3d\mat4.hpp" />
+    <ClInclude Include="lib\3d\mat4x1.hpp" />
+    <ClInclude Include="lib\3d\quaternion.hpp" />
+    <ClInclude Include="lib\3d\vec2.hpp" />
+    <ClInclude Include="lib\3d\vec3.hpp" />
+    <ClInclude Include="lib\3d\vec4.hpp" />
+    <ClInclude Include="lib\common\backtrace.hpp" />
+    <ClInclude Include="lib\common\basic_functions.hpp" />
+    <ClInclude Include="lib\common\error_handling.hpp" />
+    <ClInclude Include="lib\common\exception_cpe.hpp" />
+    <ClInclude Include="lib\mesh\format\mesh_io_obj.hpp" />
+    <ClInclude Include="lib\mesh\format\mesh_io_off.hpp" />
+    <ClInclude Include="lib\mesh\mesh.hpp" />
+    <ClInclude Include="lib\mesh\mesh_basic.hpp" />
+    <ClInclude Include="lib\mesh\mesh_io.hpp" />
+    <ClInclude Include="lib\mesh\mesh_parametric.hpp" />
+    <ClInclude Include="lib\mesh\triangle_index.hpp" />
+    <ClInclude Include="ray_tracing\primitives\intersection_data.hpp" />
+    <ClInclude Include="ray_tracing\primitives\plane.hpp" />
+    <ClInclude Include="ray_tracing\primitives\primitive_basic.hpp" />
+    <ClInclude Include="ray_tracing\primitives\sphere.hpp" />
+    <ClInclude Include="ray_tracing\render_engine\render_engine.hpp" />
+    <ClInclude Include="ray_tracing\scene\anti_aliasing_table.hpp" />
+    <ClInclude Include="ray_tracing\scene\camera.hpp" />
+    <ClInclude Include="ray_tracing\scene\light.hpp" />
+    <ClInclude Include="ray_tracing\scene\material.hpp" />
+    <ClInclude Include="ray_tracing\scene\ray.hpp" />
+    <ClInclude Include="ray_tracing\scene\scene_parameter.hpp" />
+    <ClInclude Include="ray_tracing\scene\shading_parameter.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
