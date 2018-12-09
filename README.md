@@ -1,4 +1,5 @@
 # School-and-personal-project
+This is my personal github for project realised in school or at home. These are far from perfect but you can check the code if you don't know how to implement such project, it's always easier than beginning from nothing :)
 
 # Project Ray_tracing
   Rendering engine coded in c++. Based on ray tracing technologies, this program will create an image from a 3D scene containing      spheres and plane. AA and reflexion are implemented. Future work will be on textures and new primitives.
