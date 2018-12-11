@@ -1,0 +1,57 @@
+﻿  main.cpp
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(30): warning C4305: '*=' : troncation de 'double' à 'T'
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(36): warning C4305: '*=' : troncation de 'double' à 'T'
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(151): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(284): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(285): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(292): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(293): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(304): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(305): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(313): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+c:\users\robinson\desktop\cpe\irrlicht\jeuxvideos\irrlicht_game\main.cpp(314): warning C4244: '+=' : conversion de 'double' en 'T', perte possible de données
+          with
+          [
+              T=irr::f32
+          ]
+  TEST.vcxproj -> C:\Users\Robinson\Desktop\CPE\Irrlicht\JeuxVideos\Irrlicht_game\Debug\TEST.exe

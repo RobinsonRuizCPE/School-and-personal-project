@@ -1,0 +1,63 @@
+date: 6th of june 2001
+Quake3Arena DM/Tourney/CTF level.
+
+====================================================
+title:            The ruin
+file:             ruin.pk3
+author:           LooF 
+email address:    loof0@hotmail.com
+URL:              http://loof.slackersoftware.com/maps
+description:      A rather large CTF map, kind of
+		  shitty on the r_speed, good for 6-16
+		  players
+
+====================================================
+play information
+
+skills 0,1,2,3:   no
+tourney:          no
+deathmatch:       big deathmatch
+CTF:              yes
+Bot File (aas):   yes
+other:            no
+new sounds:       no
+new graphics:     yes
+new music:        no
+
+how to play       place ruin.pk3 in your /baseq3/ folder
+                  start quake3arena      
+                  hit ~
+                  type /map ruin
+                  type /addbot <botname> <skill>
+                  hit ~ (to clear the console)
+                  
+====================================================
+info
+
+I'm LooF the only girl I know who maps :)
+and I made this map with GTK radiant in
+a couple of weeks.
+
+====================================================
+construction
+
+base:           none
+editor:         GTKradiant
+other progs:    GTKbuild
+know bugs:      none known
+build time:     about 2 weeks of spare time
+
+====================================================
+thanx to ...
+
+riccolo for the textures, and thank you terragen
+for the endless supply of skyboxes, thank you
+notepad for making shaders
+
+====================================================
+Distribution / Copyright / Permissions
+ 
+you do what you want with it as long as you don't
+go and sell it. or take credit for it :P
+
+====================================================

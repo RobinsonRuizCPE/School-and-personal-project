@@ -25,7 +25,7 @@ namespace iv = irr::video;
  * EventReceiver::EventReceiver                                           *
 \**************************************************************************/
 EventReceiver::EventReceiver()
-	:node(nullptr), button_pressed(false), locked(false),jumped(false), camera(nullptr), enemy_locked(nullptr)
+	:node(nullptr), button_pressed(false), locked(false),jumped(false), camera(nullptr),jump_colision(nullptr), enemy_locked(nullptr)
 { 
 	old_cam_pos = ic::vector3df(0,0,0);
 	old_cam_rot = ic::vector3df(0, 0, 0);
@@ -46,9 +46,7 @@ bool EventReceiver::keyboard(const SEvent &event)
 		switch (event.KeyInput.Key)
 		{
 		case KEY_SPACE:
-			if (jumped == false) {
-				node->setMD2Animation(is::EMAT_JUMP);
-				node->setAnimationSpeed(24);
+			if (jumped==false && jump_colision->collisionOccurred()) {
 				jumped = true;
 			}
 			break;
@@ -57,7 +55,6 @@ bool EventReceiver::keyboard(const SEvent &event)
 		case KEY_LMENU: // Avance
 			if (locked) {
 				locked = false;
-				enemy_locked->setName("  ");
 				enemy_locked = nullptr;
 			}
 			else
@@ -112,7 +109,6 @@ bool EventReceiver::OnEvent(const SEvent &event)
   case EET_KEY_INPUT_EVENT: {
 	  bool un=keyboard(event);
 	  KeyIsDown[event.KeyInput.Key] = event.KeyInput.PressedDown;
-	  jump_animation();
 	  return false;}
     case EET_MOUSE_INPUT_EVENT:
       return mouse(event);
@@ -150,10 +146,11 @@ bool EventReceiver::is_locked()
   return false;
 }
 
-void EventReceiver::set_node_and_camera(irr::scene::IAnimatedMeshSceneNode *n, irr::scene::ISceneNode *c)
+void EventReceiver::set_node_camera_terrain(irr::scene::IAnimatedMeshSceneNode *n, irr::scene::ISceneNode *c, irr::scene::ISceneNodeAnimatorCollisionResponse *j)
 {
 	node = n;
 	camera = c;
+	jump_colision = j;
 	old_cam_pos = c->getAbsolutePosition();
 	old_cam_rot = c->getRotation();
 }
@@ -179,23 +176,25 @@ float * EventReceiver::smooth_camera(irr::ILogger *logger) {
 		return NULL;
 }
 
+void EventReceiver::set_locked() {
+	if (locked)
+		locked = false;
+}
+
 void EventReceiver::jump_animation(){
-	if (jumped) {
+	if (jumped && jump_colision->collisionOccurred()) {
+		node->setMD2Animation(is::EMAT_JUMP);
+		node->setAnimationSpeed(18);
 		ic::vector3df position = node->getAbsolutePosition();
 		ic::vector3df position_cam = camera->getPosition();
-		position.Y += 30;
-		position_cam.Y -= 30;
+		//position.Y += 30;
+		jump_colision->setTargetNode(node);
+		position_cam.Y -= 10;
+		jump_colision->jump(6);
 
-		if (node->getFrameNr() >= node->getEndFrame() - 4)
-		{
-			node->setMD2Animation(is::EMAT_STAND);
+		if (jump_colision->collisionOccurred())
 			jumped = false;
-			//is_jumping = false;
-		}
-		if (node->getFrameNr() < node->getEndFrame()) {
-		}
-		if (node->getFrameNr() < node->getEndFrame() - (node->getEndFrame() / node->getFrameNr()) / 1.5f) {
-		}
+	
 		node->setPosition(position);
 		camera->setPosition(position_cam);
 	}
