@@ -1,0 +1,1 @@
+/usr/bin/c++   -g -Wall -Wextra -O2     CMakeFiles/cpe_surface.dir/project/main.cc.o CMakeFiles/cpe_surface.dir/project/gl-utils.cc.o CMakeFiles/cpe_surface.dir/project/tga.cc.o  -o cpe_surface -rdynamic -lGLU -lGL -lSM -lICE -lX11 -lXext -L/usr/lib/nvidia-384 -lGL -lGLU -lglut -lGLEW 
