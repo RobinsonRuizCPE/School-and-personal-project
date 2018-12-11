@@ -1,0 +1,11 @@
+-I/usr/include/qt4
+-I/usr/include/qt4/QtGui
+-I/usr/include/qt4/QtCore
+-I/fs03/share/users/johan.bernard/home/Bureau/tp_skinning/project
+-DQT_NO_DEBUG
+-DQT_GUI_LIB
+-DQT_CORE_LIB
+-DCORRECTION
+-o
+/fs03/share/users/johan.bernard/home/Bureau/tp_skinning/project/src/lib/interface/moc_application_qt.cxx
+/fs03/share/users/johan.bernard/home/Bureau/tp_skinning/project/src/lib/interface/application_qt.hpp
